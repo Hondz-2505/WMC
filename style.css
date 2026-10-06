@@ -1,0 +1,31 @@
+body{
+    color:bisque;
+}
+
+.bodyStyle{
+    color: aquamarine;
+}
+
+/* body hat schwächste Prorität. class hat stärkerer. Style-Attribut hat die stärkste Priorität */
+
+*{
+    box-sizing: border-box;
+}
+
+.karte{
+    width: 20rem;
+    padding: 1rem; 
+    border: 2px solid;
+}
+
+/* Ohne border-box gilt width nur für den Inhalt. Padding und Border kommen außen dazu (20rem + 2rem + 4px = 356px),
+    aber wenn man border-box nutzt, macht width echt 20rem (320px), ohne border und padding  */
+
+.rgba1{
+   background: rgba(109, 40, 217, 0.15);
+}
+
+.rgba2{
+    background: rgba(109, 40, 217, 1);
+}
+/* Transparenz ändert sich 1 - voll, 0 - kein */
