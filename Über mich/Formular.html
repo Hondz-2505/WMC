@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formular</title>
+</head>
+<body>
+    <h2>Formular</h2>
+        <form action="mailto:serhii.hondz.fareniuk.git@gmail.com" method="post" enctype="text/plain">
+            <label for="username">Vorname: </label> 
+            <input type="text" name="vorname"> <br>
+            <label for="nachname">Nachname: </label> 
+            <input type="text" name="nachname"> <br>
+            <label for="geschlecht">Geschlecht: </label>
+                <input type="radio" name="geschlecht" value="maennlich">
+                <label for="maennlich">Männlich</label>
+                <input type="radio" name="geschlecht" value="weiblich">
+                <label for="weiblich">Weiblich</label>
+                <input type="radio" name="geschlecht" value="divers">
+                <label for="divers">Divers</label> <br>
+            <label for="studienbereich">Studienbereich: </label>
+                <input type="checkbox" name="studienbereich" value="programmierung">
+                <label for="programmierung"> Programmierung</label>
+                <input type="checkbox" name="studienbereich" value="3D-Design"> 
+                <label for="3D-design">3D-Design</label>
+                <input type="checkbox" name="studienbereich" value="ai"> 
+                <label for="ai">AI</label>
+                <input type="checkbox" name="studienbereich" value="cybersecurity"> 
+                <label for="cybersecurity">Cyber Security</label> <br>
+            <label for="werSindSie">Wer sind Sie?</label>
+                <select name="werSindSie">
+                    <option value="lehrer">Lehrer</option>
+                    <option value="student">Student</option>
+                    <option value="anderes">anderes</option>
+                    <option value="keineAngabe" selected>Keine Angabe</option>
+                </select> <br>
+            <label for="wasWollenSieTun">Was wollen Sie tun?</label> <br>
+                <select name="wasWollenSieTun" multiple>
+                    <option value="kennenlernen">Kennenlernen</option>
+                    <option value="feedbackGeben">Feedback geben</option>
+                    <option value="helfen">Helfen</option>
+                    <option value="anderes" selected>anderes</option>
+                </select> <br>
+            <label for="wasGenauAnderesWollenSieTun">Was genau Anderes wollen Sie tun?</label> <br>
+                <textarea name="kommentar" placeholder="Schreiben Sie hier!"></textarea><br>
+            <input type="submit" value="Formular abschicken">
+            <input type="reset" value="Formular zurücksetzen">
+        </form>
+</body>
+</html>
