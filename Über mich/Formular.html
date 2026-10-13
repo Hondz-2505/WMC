@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,44 +8,40 @@
 </head>
 <body>
     <h1>Formular</h1> 
-    <a href="index.html">Zurück zum Hauptseite</a> <hr>
+    <a href="index.html">Zurück zur Hauptseite</a> <hr>
         <form action="mailto:serhii.hondz.fareniuk.git@gmail.com" method="post" enctype="text/plain">
-            <label for="username">Vorname: </label> 
-            <input type="text" name="vorname"> <br>
-            <label for="nachname">Nachname: </label> 
-            <input type="text" name="nachname"> <br>
-            <label for="geschlecht">Geschlecht: </label>
-                <input type="radio" name="geschlecht" value="maennlich">
-                <label for="maennlich">Männlich</label>
-                <input type="radio" name="geschlecht" value="weiblich">
-                <label for="weiblich">Weiblich</label>
-                <input type="radio" name="geschlecht" value="divers">
-                <label for="divers">Divers</label> <br>
-            <label for="studienbereich">Studienbereich: </label>
-                <input type="checkbox" name="studienbereich" value="programmierung">
-                <label for="programmierung"> Programmierung</label>
-                <input type="checkbox" name="studienbereich" value="3D-Design"> 
-                <label for="3D-design">3D-Design</label>
-                <input type="checkbox" name="studienbereich" value="ai"> 
-                <label for="ai">AI</label>
-                <input type="checkbox" name="studienbereich" value="cybersecurity"> 
-                <label for="cybersecurity">Cyber Security</label> <br>
-            <label for="werSindSie">Wer sind Sie?</label>
+            <label>Vorname: <input type="text" name="vorname"></label> <br>
+            <label>Nachname: <input type="text" name="nachname"></label> <br>
+            Geschlecht:
+                <label><input type="radio" name="geschlecht" value="maennlich"> Männlich</label>
+                <label><input type="radio" name="geschlecht" value="weiblich"> Weiblich</label>
+                <label><input type="radio" name="geschlecht" value="divers"> Divers </label>
+                <br>
+            Studienbereich:
+                <label><input type="checkbox" name="studienbereich" value="programmierung"> Programmierung</label>
+                <label><input type="checkbox" name="studienbereich" value="3D-Design"> 3D-Design</label>
+                <label><input type="checkbox" name="studienbereich" value="ai"> AI</label>
+                <label><input type="checkbox" name="studienbereich" value="cybersecurity"> Cyber Security</label>
+                <br>
+            Wer sind Sie?
                 <select name="werSindSie">
                     <option value="lehrer">Lehrer</option>
                     <option value="student">Student</option>
                     <option value="anderes">anderes</option>
                     <option value="keineAngabe" selected>Keine Angabe</option>
-                </select> <br>
-            <label for="wasWollenSieTun">Was wollen Sie tun?</label> <br>
+                </select>
+                <br>
+            Was wollen Sie tun? <br>
                 <select name="wasWollenSieTun" multiple>
                     <option value="kennenlernen">Kennenlernen</option>
                     <option value="feedbackGeben">Feedback geben</option>
                     <option value="helfen">Helfen</option>
                     <option value="anderes" selected>anderes</option>
-                </select> <br>
-            <label for="wasGenauAnderesWollenSieTun">Was genau Anderes wollen Sie tun?</label> <br>
+                </select>
+                <br>
+            <label>Was genau Anderes wollen Sie tun? <br>
                 <textarea name="kommentar" placeholder="Schreiben Sie hier!"></textarea><br>
+            </label> <br>
             <input type="submit" value="Formular abschicken">
             <input type="reset" value="Formular zurücksetzen"> <br>
         </form>
