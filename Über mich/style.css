@@ -21,8 +21,28 @@ body{
 img{
     margin: 1rem;
     margin-left: 3rem;
+    display: block;
+    border: 4px solid;
+    padding: 0.25rem;
 }
+
 
 #hobbyNav{
     margin-left: 3rem;
+}
+
+a{
+    display: inline-block;
+    padding: 0.4rem 0.9rem;
+    border: 2px solid;
+    font-weight: 600;
+}
+
+form {
+    display: block;
+    max-width: 40rem;
+    margin: 1rem;
+    padding: 1.5rem;
+    background: #fff;
+    border: 2px solid;
 }
