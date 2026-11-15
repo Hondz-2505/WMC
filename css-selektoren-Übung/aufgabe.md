@@ -160,8 +160,12 @@ wechselt.
 (`Hauptgericht`) hervorgehoben ist und die letzte Zeile einen oberen
 Rahmen bekommt — **ohne** Klassen oder IDs in den Zeilen.
 
+Keine Ahnung wieso bei mir obere Rahme nicht funktioniert, obwohl es in ihrer Lösung gleich so ist.
+
 **d)** Erkläre in zwei Sätzen, warum du für (a) einen Attribut-Selektor und
 keinen Klassen-Selektor verwendet hast.
+
+Das data-topic-Attribut ist im HTML schon vorhanden, ein Klassen-Selektor würde dieselbe Information zweites Mal verlangen. Mit ^= werden außerdem automatisch alle Sektionen getroffen.
 
 _________________________________________________
 
