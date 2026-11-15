@@ -1,6 +1,6 @@
 # Aufgabe KM3-04 — CSS-Selektoren
 
-Name: _____________ &nbsp;&nbsp;&nbsp; Abgabe: _____________
+Name: Serhii Hondz-Fareniuk &nbsp;&nbsp;&nbsp; Abgabe: _____________
 
 **Lektüre:** MDN, [CSS-Selektoren](https://developer.mozilla.org/de/docs/Web/CSS/CSS_selectors) —
 Pflicht, wie in der Lektion. Zum Üben: [CSS Diner](https://flukeout.github.io/).
@@ -57,14 +57,16 @@ Vier Aussagen, **0 bis 4 können richtig sein**. Kreuze alle zutreffenden an.
 
 **Aussagen zu Selektoren und Spezifität**
 
-- [ ] Ein Selektor wie `p.hinweis` trifft nur Absätze, die diese Klasse tragen.
-- [ ] `h2 ~ p` trifft alle Absätze nach einer `h2`, die dieselbe Ebene haben.
+- [x] Ein Selektor wie `p.hinweis` trifft nur Absätze, die diese Klasse tragen.
+- [x] `h2 ~ p` trifft alle Absätze nach einer `h2`, die dieselbe Ebene haben.
 - [ ] `:nth-child(2)` und `:nth-of-type(2)` treffen immer dasselbe Element.
-- [ ] Bei gleichem Gewicht gewinnt die später notierte Regel.
+- [x] Bei gleichem Gewicht gewinnt die später notierte Regel.
 
 **a)** Kreuze an und begründe bei der Aussage, die du **nicht** angekreuzt
 hast, warum sie falsch ist:
 
+nth-child(2) zählt alle Kinder, egal welcher Tag, und trifft das zweite Kind.
+nth-of-type(2) zählt nur Geschwister mit demselben Tag.
 _________________________________________________
 
 **b)** Schreibe für jede Zielbeschreibung **einen** Selektor. Es gibt
@@ -72,11 +74,11 @@ mehrere richtige Lösungen; eine genügt.
 
 | Ziel | Dein Selektor |
 |------|---------------|
-| alle Links, deren Ziel auf `.pdf` endet | |
-| alle Absätze außer denen mit der Klasse `hinweis` | |
-| das erste `li` in jeder `ul` | |
-| jedes Element, das ein `img` enthält | |
-| das Häkchen, das direkt vor einem `label` steht | |
+| alle Links, deren Ziel auf `.pdf` endet | a[href$=".pdf"] |
+| alle Absätze außer denen mit der Klasse `hinweis` | p:not(.hinweis) |
+| das erste `li` in jeder `ul` | ul > li:first-child |
+| jedes Element, das ein `img` enthält | *:has(img) |
+| das Häkchen, das direkt vor einem `label` steht |  input:checked + label |
 
 **c)** Diese Regel tut nicht, was der Kommentar behauptet. Erkläre den Fehler
 und schreibe die Regel richtig:
@@ -84,6 +86,11 @@ und schreibe die Regel richtig:
 ```css
 /* Der erste Absatz im Container soll fett sein. */
 p:nth-child(1) { font-weight: bold; }
+```
+
+```css
+p:nth-child(1) zählt alle Kinder des Containers. Steht vor dem ersten Absatz vielleicht eine Überschrift, ist dieser Absatz das zweite oder dritte+ Kind, und die Regel trifft nichts. Deshalb wäre es richtig mit  Geschwistern zu tun oder den genauen Ort (Folge) des Absturzes zu wissen 
+p:first-of-type { font-weight: bold; }
 ```
 
 _________________________________________________
