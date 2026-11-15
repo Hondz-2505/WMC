@@ -670,7 +670,8 @@ table.gewichte th {
     background: var(--tint);
 }
 
-<!----------------------------------------------------------Speisekarte-->
+/* ------------------------------------------------- Speisekarte */
+
 table.speisekarte { 
     width: 100%; 
 }
@@ -696,7 +697,14 @@ table.speisekarte tbody tr:last-child td:first-child{
     border-left: 6px solid var(--accent);
 }
 
+/* ------------------------------------------------- geordnete Liste */
 
+ol.schritte li:nth-child(2) { 
+    font-weight: bold;
+}
+ol.schritte li:nth-last-child(2) { 
+    font-style: italic;
+}
 
 
 

@@ -42,7 +42,8 @@ Notiere die drei Selektoren, die du verwendet hast:
 die Position, nicht über eine Klasse.
 
 ```
-2. Schritt: ______________________      vorletzter: ______________________
+2. Schritt: ol.schritte li:nth-child(2)       
+vorletzter: ol.schritte li:nth-last-child(2)
 ```
 
 **c)** Baue zwei `<div class="kasten">`-Blöcke: einen mit einem Bild darin,
