@@ -50,7 +50,9 @@ vorletzter: ol.schritte li:nth-last-child(2)
 einen ohne. Formatiere **nur** den Kasten mit Bild über `:has()`. Warum
 funktioniert hier `:has()` und nicht `:is()`?
 
-_________________________________________________
+has() prüft, ob ein Element etwas Bestimmtes in sich enthält.
+:is() prüft das Element selbst, nicht seinen Inhalt. 
+.kasten:is(img) würde nie etwas treffen, weil div kein img ist.
 
 ---
 

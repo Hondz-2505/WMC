@@ -706,7 +706,11 @@ ol.schritte li:nth-last-child(2) {
     font-style: italic;
 }
 
+/* ------------------------------------------------- Kasten */
 
+.kasten:has(img) { 
+    border: 3px solid var(--accent);
+}
 
 /* main :is(h2, h3) — beide Überschriftentypen in EINEM Selektor;
    Gewicht 0-0-2 (main + der schwerste :is-Parameter). */
