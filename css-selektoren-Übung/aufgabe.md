@@ -32,7 +32,9 @@ den Zeilen:
 Notiere die drei Selektoren, die du verwendet hast:
 
 ```
-1) ______________________   2) ______________________   3) ______________________
+1) table.speisekarte thead th   
+2) table.speisekarte tbody tr:nth-child(2n)      
+3) table.speisekarte tbody tr:last-child td:first-child
 ```
 
 **b)** Ergänze eine geordnete Liste mit fünf Schritten. Formatiere den
